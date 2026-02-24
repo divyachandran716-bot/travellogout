@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    
+}
+
+body {
+     background: #faf6f8;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh;  */
+    
+    line-height: 1.6;
+  padding-top: 40px;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+header {
+/*  background: #0a3d62;*/
+  padding: 1rem 2rem;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+}
+
+.form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.password {
+    position: relative;
+}
+
+.password span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+
+@media(max-width:768px) {
+    .cards {
+        flex-direction: column;
+    }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1e2a5a;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+
+  margin: auto;
+  padding: 15px 20px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hamburger span{
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+}
+
+/* Hero */
+.hero {
+  background: url("https://wallpaperaccess.com/full/136072.jpg") no-repeat center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  color: #fff;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #f39c12;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: #eff2f2 ;
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+}
+
+/* Destinations */
+.destinations {
+  padding: 3rem 2rem;
+  background: #eef2f3;
+  text-align: center;
+}
+
+.destination-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.destination-card {
+  background: #fff;
+  flex: 1;
+  padding: 1rem;
+}
+
+.destination-card img {
+  width: 100%;
+  max-width: 100%;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.destination-card:hover img{
+  box-shadow: 0 0 15px red;
+  filter: blur(3px);
+}
+
+/* Contact */
+.contact {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-image: url("https://www.pillowscience.com.au/cdn/shop/files/contact-us-page.jpg?v=1686887736&width=1920");
+}
+
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+}
+
+.contact button {
+  padding: 0.7rem;
+  background: #0a3d62;
+  color: #fff;
+  border: none;
+}
+
+/* Footer */
+footer {
+  background: #0a3d62;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1e2a5a;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li{
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .feature-card:hover img{
+    filter: brightness(1.1) contrast(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+  }
+   .f
+
+
+
+  .feature-container,
+  .destination-container {
+    flex-direction: column;
+  }
+}
+  
+
+
+
